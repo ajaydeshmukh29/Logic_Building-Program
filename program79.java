@@ -1,0 +1,40 @@
+//////////////////////////////
+//
+//  Problem on Digits
+//
+//////////////////////////////
+
+
+import java.util.*;
+
+class DigitX
+{
+  public void DisplayDigits(int iNo)
+  {
+    int iDigits = 0;
+
+    while (iNo > 0) 
+    {
+      iDigits = iNo % 10;
+      System.out.println(iDigits);
+      iNo = iNo / 10;
+
+    }
+  }
+}
+
+class program79
+{
+  public static void main(String A[])
+  {
+    Scanner sobj = new Scanner(System.in);
+    DigitX dobj = new DigitX();
+
+    int iValue = 0;
+
+    System.out.println("Enter number : ");
+    iValue = sobj.nextInt();
+    
+    dobj.DisplayDigits(iValue);
+  }
+}
